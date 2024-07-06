@@ -1,22 +1,132 @@
+*{
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+
 body{
     background-repeat: no-repeat;
     background-size: cover; /* horizontal */
     background-attachment: fixed; /* vertical */
 }
 
-p{
-    background-color: blue;
+#para1{
+    height: 300px;
+    background-color: rgba(0, 0, 255,0.5);
+    /* opacity: 0.5; */
     color: wheat;
     box-shadow: 50px 50px 20px rgb(175, 45, 45)  ;
     font-family: Arial, Helvetica, sans-serif ;
     font-style: italic;
-    text-align: start;
+    text-align: justify;
     text-indent: 100px;
     text-transform: capitalize;
     text-shadow: 10px 10px 5px black;
-    letter-spacing: 2px;
-    word-spacing: 50px ;
+    /* letter-spacing: 2px; */
+    /* word-spacing: 25px ; */
+    /* line-height: 50px; */
+    padding: 10px 20px 30px 40px;
+    /* padding-top: 100px;
+    padding-left: 50px; */
+    border: 10px solid black ;
+    /* border-top: 2px dashed red  ;
+    border-right: 6px double rgba(40, 222, 16, 0.956)  ;
+    border-bottom: 2px dotted red  ;
+    border-left: 2px solid red  ; */
+    /* border-radius: 50% ; */
+    overflow: hidden;
+    /* margin: auto; */
+    /* outline: 10px solid pink;
+    outline-offset: 30px; */
+    /* margin-top: 100PX;
+    margin-left: 50px;
+    margin-bottom: 100px; */
+    /* margin: 100px 50px 30px 200px ; */
+    /* margin-left: 50px; */
 }
 a{
     text-decoration: none;
 }
+table{
+    border-collapse:collapse
+}
+img{
+    border-radius: 50%;
+    border: 5px solid rgb(111, 52, 52);
+}
+div{
+    background-color: black;
+    padding: 20px;
+}
+h5{
+    background-color: brown;
+    padding: 5px;
+}
+div{
+    margin: 10px 0;
+}
+/* descandant Selector ( space ) */
+.first-division  .box{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    margin: 10px 0px;
+    padding: 20px;
+}
+
+/* ol,ul{
+    list-style-type: none;
+} */
+
+.second-division>section:nth-child(1){
+    width: 100px;
+    height: 100px;
+    background-color: rgb(169, 116, 18);
+}
+
+.list a{
+    padding: 10px;
+    text-shadow: 2px 2px 2px white;
+} 
+/* child selector */
+.list>ol>li>a{
+    text-decoration: none;
+    color: rgb(31, 3, 14);
+    background-color: rgb(125, 22, 22);
+}
+.list ul{
+    color: white;
+}
+/* Adjacent Sibling */
+.list ol+ul{
+    background-color: blueviolet;
+}
+/* General Sibling */
+#para1~table{
+    border: 1px blue dotted;
+}
+#para1+#para2{
+    color: red;
+    background-color: black;
+}
+
+h1{
+    color: red;
+    background-color: black;
+}
+/* Pseudo Classes */
+h1:hover{
+    color: white;
+    background-color: red;
+    width: 300px;
+}
+h1:active{
+    color: blueviolet;
+}
+button:active{
+    color: violet;
+    background-color: black;
+}
+
+button:focus{
+    color: pink;
+}
+
